@@ -4,13 +4,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Stand Alone Component of a simple circular graph
 
-This project is very simple. It's a standAlone Component wich means that you can copy the folder where the circular Graph component is. Paste it onto your Angular project , import into a module and done.
+This project is very simple. It's a standAlone Component wich means that you can copy the folder where the circular Graph component is. Paste it onto your Angular project , import it into a module and done.
 
 You have a circular graph that you can pass an array of numbers and it will show you the representation in the graph.
 
 And this component is an svg so it has transparency in his center unlike a canvas where you have no transparency in the middle.
 
-This are te values you can pass
+This are the values you can pass
 
 ### [<span style="color:green">data</span>]: Array<number\>
 
