@@ -1,0 +1,16 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+p{
+  color: grey;
+}
+.conteiner{
+  display: block;
+  height: 60vh;
+  width: 60%;
+  outline: grey dashed 1px;
+}
+

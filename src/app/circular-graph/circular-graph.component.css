@@ -1,0 +1,10 @@
+circle{
+  /* stroke-width: 1; */
+  transform: rotate(-90deg);
+  transform-origin: 50%;
+  transition: all 1s;
+}
+
+svg{
+  /* background-color: aqua; */
+}

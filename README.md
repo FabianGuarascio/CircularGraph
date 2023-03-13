@@ -2,26 +2,28 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
 
-## Development server
+## Stand Alone Component of a simple circular graph
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project is very simple. It's a standAlone Component wich means that you can copy the folder where the circular Graph component is. Paste it onto your Angular project , import into a module and done.
 
-## Code scaffolding
+You have a circular graph that you can pass an array of numbers and it will show you the representation in the graph.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+And this component is an svg so it has transparency in his center unlike a canvas where you have no transparency in the middle.
 
-## Build
+This are te values you can pass
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### [<span style="color:green">data</span>]: Array<number\>
 
-## Running unit tests
+This is the data that you want to represent in the graph, you can pass as many values as you want and it will calculate the percentage representation in th graph. Keep in mind that if you pass more than 6 values you need to pass an array of [<span style="color:lightgreen">c</span><span style="color:red">o</span><span style="color:yellow">l</span><span style="color:cyan">o</span><span style="color:pink">r</span><span style="color:orange">s</span>] with the same amount of values that you have passed.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### [<span style="color:green">colors</span>]: Array<string\>
 
-## Running end-to-end tests
+By default it has an array with 6 colors, if you want to change the colors you need to pass an array of strings with the colors you want.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### [<span style="color:green">strokeWidth</span>]: number
 
-## Further help
+By default the value of the stroke is 15px, you can change it.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### [<span style="color:green">heightAndWidth</span>]: number
+
+By default it the width and the height is the 100% of the father container. And this is the expected behaivour, but if you want you can pass a value in px and set it manualy. But this will make the graph not responsive when the size of the window changes.

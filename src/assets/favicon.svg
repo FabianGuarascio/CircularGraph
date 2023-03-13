@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+    <circle
+      r="150"
+      cy="50%"
+      cx="50%"
+      fill="none"
+      stroke="green"
+      stroke-width="100"
+      stroke-dasharray="100 100"
+      pathLength="100"
+    ></circle>
+    <circle
+      r="150"
+      cy="50%"
+      cx="50%"
+      fill="none"
+      stroke="red"
+      stroke-width="100"
+      stroke-dasharray="75 100"
+      pathLength="100"
+    ></circle>
+    <circle
+      r="150"
+      cy="50%"
+      cx="50%"
+      fill="none"
+      stroke="blue"
+      stroke-width="100"
+      stroke-dasharray="50 100"
+      pathLength="100"
+    ></circle>
+    <circle
+      r="150"
+      cy="50%"
+      cx="50%"
+      fill="none"
+      stroke="yellow"
+      stroke-width="100"
+      stroke-dasharray="25 100"
+      pathLength="100"
+    ></circle>
+</svg>
