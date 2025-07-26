@@ -6,26 +6,25 @@ import {
   ChangeDetectorRef,
   HostListener,
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { trigger, style, transition, animate } from '@angular/animations';
 
 type TDataPlusColor = { data: number; color: string };
 type SvgInHtml = HTMLElement & SVGElement;
 @Component({
-  selector: 'app-circular-graph',
-  standalone: true,
-  imports: [CommonModule, BrowserAnimationsModule],
-  templateUrl: './circular-graph.component.html',
-  styleUrls: ['./circular-graph.component.css'],
-  animations: [
-    trigger('startOff', [
-      transition('* => *', [
-        style({ strokeDasharray: '0 100' }),
-        animate('1s ease-out'),
-      ]),
-    ]),
-  ],
+    selector: 'app-circular-graph',
+    imports: [BrowserAnimationsModule],
+    templateUrl: './circular-graph.component.html',
+    styleUrls: ['./circular-graph.component.css'],
+    animations: [
+        trigger('startOff', [
+            transition('* => *', [
+                style({ strokeDasharray: '0 100' }),
+                animate('1s ease-out'),
+            ]),
+        ]),
+    ]
 })
 export class CircularGraphComponent implements AfterViewInit {
   public rAttr = 0;
