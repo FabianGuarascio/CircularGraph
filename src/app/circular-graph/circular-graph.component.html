@@ -1,15 +1,17 @@
 <svg [attr.height]="heightAndWidth" [attr.width]="heightAndWidth">
-  <ng-container *ngFor="let dataPlusColor of dataPlusColorArr">
-    <circle
-      [attr.r]="rAttr"
-      cy="50%"
-      cx="50%"
-      fill="none"
-      [attr.stroke]="dataPlusColor.color"
-      [attr.stroke-width]="strokeWidth"
-      [attr.stroke-dasharray]="dataPlusColor.data + ' ' + '100'"
-      pathLength="99.91"
-      @startOff
-    ></circle>
-  </ng-container>
+  @for (dataPlusColor of dataPlusColorArr; track dataPlusColor) {
+    <ng-container>
+      <circle
+        [attr.r]="rAttr"
+        cy="50%"
+        cx="50%"
+        fill="none"
+        [attr.stroke]="dataPlusColor.color"
+        [attr.stroke-width]="strokeWidth"
+        [attr.stroke-dasharray]="dataPlusColor.data + ' ' + '100'"
+        pathLength="99.91"
+        @startOff
+      ></circle>
+    </ng-container>
+  }
 </svg>
